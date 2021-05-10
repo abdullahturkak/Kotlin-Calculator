@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Lütfen Sayı Giriniz"
+        android:textSize="20sp"
+        android:gravity="bottom"
+        android:layout_marginBottom="2dp"
+        />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Lütfen Sayı Giriniz"
+        android:textSize="20sp"
+        android:gravity="bottom"
+        android:layout_marginBottom="2dp"
+        />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+/>
+
+
+    <TextView
+        android:id="@+id/sonucu"
+        android:layout_width="244dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="195dp"
+        android:text="Sonuç:"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="66dp"
+            android:layout_height="42dp"
+            android:backgroundTint="#878383"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="60dp"
+            android:onClick="topla"
+            android:text="Topla" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="66dp"
+            android:layout_height="42dp"
+            android:backgroundTint="#878383"
+            android:layout_marginRight="8dp"
+            android:onClick="cıkar"
+            android:text="Çıkar" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="66dp"
+            android:layout_height="42dp"
+            android:backgroundTint="#878383"
+            android:layout_marginRight="8dp"
+            android:onClick="carp"
+            android:text="Çarp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="66dp"
+            android:layout_height="42dp"
+            android:backgroundTint="#878383"
+            android:onClick="bol"
+            android:text="Böl" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="139dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="60dp"
+            android:backgroundTint="#878383"
+            android:onClick="tamamınıtopla"
+            android:text="Topla" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="139dp"
+            android:layout_height="42dp"
+            android:backgroundTint="#878383"
+            android:layout_marginRight="8dp"
+            android:onClick="asalmı"
+            android:text="Asal Mı?" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Sonuç"
+        android:textSize="20sp"
+        android:gravity="bottom|center"
+        android:layout_marginBottom="2dp"
+        />
+
+
+
+</LinearLayout>
